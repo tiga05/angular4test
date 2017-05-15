@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule, MdInputModule} from '@angular/material';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MdButtonModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule} from
     MdButtonModule,
     MdCheckboxModule,
     MdToolbarModule,
-    MdSidenavModule
+    MdSidenavModule,
+    MdInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

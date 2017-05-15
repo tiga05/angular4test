@@ -5,21 +5,20 @@
   </md-sidenav>
 
   <div class="example-sidenav-content">
+
     <button md-button (click)="sidenav.open()">
       Open sidenav
     </button>
-    <h1>
-      {{title}}
-    </h1>
-    <button md-raised-button>Raised button</button>
-    <button md-button>Raised button</button>
-    <button md-button>Flat button</button>
-    <button md-raised-button>Raised button</button>
-    <button md-fab><md-icon>check</md-icon></button>
-    <button md-mini-fab><md-icon>check</md-icon></button>
 
-    <i class="material-icons">3d_rotation</i>
 
-  </div>
 
-</md-sidenav-container>
+
+    <h2>My Heroes</h2>
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </li>
+      <h3>{{selectedHero.name}}</h3>
+      <h3>{{selectedHero.id}}</h3>
+    </ul>
+  </div></md-sidenav-container>
